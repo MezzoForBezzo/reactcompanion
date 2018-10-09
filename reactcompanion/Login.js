@@ -75,7 +75,8 @@ const styles = StyleSheet.create({
     padding: 10,
      margin: 15,
      height: 40,
-     borderWidth: 1
+     borderWidth: 1,
+    borderRadius: 20
   },
   submitButton: {
      backgroundColor: '#fff',
@@ -83,6 +84,7 @@ const styles = StyleSheet.create({
      padding: 10,
      margin: 15,
      height: 40,
+    borderRadius: 20
   },
   submitButtonText:{
     textAlign: 'center',

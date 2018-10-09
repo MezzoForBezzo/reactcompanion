@@ -20,7 +20,7 @@ export default class Vent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {title: 'Vent',
-      description: 'This is the vent page',
+      description: "Welcome to the ETHER!!!! Here you can send a message to noone and they won't judge you or be offended by what you have to say. Just enter some words below and see it disappear!! oohhhhhh......",
       text: '',
       message: '',
       messages: [],
@@ -67,7 +67,7 @@ render() {
               <TextInput
                 ref={input => { this.textInput = input }}
                 placeholder="Vent here!"
-                style={{height: 40, flex:1, borderColor: 'gray', borderWidth: 1, padding:10}}
+                style={{height: 40, flex:1, borderRadius: 20 ,borderColor: 'gray', borderWidth: 1, padding:10}}
                 onChangeText={(text) => this.setState({text})}
                 value={this.state.text}></TextInput>
             </View>
@@ -107,7 +107,6 @@ const styles = StyleSheet.create({
     width: 60,
     alignItems: 'flex-end',
     justifyContent: 'center',
-    padding:10
   },
   ventFooter: {
     flex: 1,

@@ -3,9 +3,7 @@ package com.reactcompanion;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
-import io.devshot.rnmaterial.RNMaterialPackage;
-import com.oblador.vectoricons.VectorIconsPackage;
-import com.BV.LinearGradient.LinearGradientPackage;
+import com.tkporter.sendsms.SendSMSPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
@@ -26,9 +24,7 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
-            new RNMaterialPackage(),
-            new VectorIconsPackage(),
-            new LinearGradientPackage()
+            SendSMSPackage.getInstance()
       );
     }
 

@@ -22,7 +22,7 @@ class CustomHeader extends React.Component {
               <Title style={{color:'#000'}}>{this.props.title}</Title>
             </View>
             <View ref={component => this._root = component} {...this.props} style={{flex: 1}}>
-              <Button style={{alignItems: 'Right'}} onPress={() => alert(this.props.description)} title="Info" color="gray" />
+              <Button style={{alignItems: 'Right'}} onPress={() => Alert.alert(this.props.title, this.props.description)} title="Info" color="gray" />
             </View>
         </View>
       </Header>
